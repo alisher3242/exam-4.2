@@ -37,6 +37,11 @@ formik.addEventListener("submit", (evt) => {
 
     data.push(users)
 
+    tbody.innerHTML = null
+    fullName.value = ""
+    group.value = ""
+    jinsi.value = ""
+    isDone.value = ""
     render(data, tbody)
     storage.setItem("keys", JSON.stringify(data))
 })
